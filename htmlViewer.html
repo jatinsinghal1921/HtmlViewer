@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Viewer</title>
+</head>
+
+<body style="background-color:grey">
+	<h1>Enter your HTML document:-</h1>
+	<textarea id = "msg" rows = "30" cols="100"></textarea>
+	<input type="submit" onclick="converter()">
+	<h1>Results:-</h1>
+	<div id = "result">
+</body>
+
+<script type="text/javascript">
+	function converter()
+	{
+		var p = document.getElementById('msg').value
+		document.getElementById('result').innerHTML = p;
+	}
+</script>
+</html>
